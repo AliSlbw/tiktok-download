@@ -647,7 +647,7 @@
       btn.disabled = true;
 
       try {
-        const res = await fetch('/download', {
+        const res = await fetch('/api/download', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ url })
